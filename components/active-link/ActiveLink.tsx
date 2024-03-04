@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link';
-import style from './activeLink.module.css'
+import style from './ActiveLink.module.css'
 import { usePathname } from 'next/navigation';
 
 interface props{
@@ -12,7 +12,7 @@ interface props{
 export const ActiveLink = ({path, text}:props) => {
 
     const pathName = usePathname()
-    
+
     return (
 
         <Link className={`${style.link} ${(pathName===path)&&style.activeLink}`} href={path}>{text}</Link>
