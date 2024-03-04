@@ -8,7 +8,11 @@ export const metadata = {
 
 export default function AboutPage(){
     return(
+        <>
             <span className="text-7xl"> About Page </span>
+            <span className="text-5xl">este es un cambio para produccion</span>
+        </>
+
         
     )
 }
